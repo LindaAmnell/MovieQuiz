@@ -1,10 +1,27 @@
+:root {
+  --text-main: #e7f6ff;
+  --text-muted: #b9cfe0;
+  --btn-bg: rgba(255, 255, 255, 0.92);
+  --btn-text: #020202;
+  --btn-border: rgba(255, 255, 255, 0.55);
+  --btn-hover-bg: rgba(255, 255, 255, 1);
+  --effect-blue: rgba(107, 168, 255, 0.45);
+  --btn-shadow-strong: 0 8px 20px rgba(0, 0, 0, 0.45);
+  --btn-shadow-glow: 0 0 14px rgba(107, 168, 255, 0.6);
+
+  --input-border: rgba(231, 246, 255, 0.6);
+  --input-focus-border: rgba(231, 246, 255, 0.9);
+}
+* {
+  box-sizing: 0;
+  margin: 0;
+}
+
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  justify-content: center;
-  place-items: center;
+  align-items: center;
   background: linear-gradient(
     to bottom,
     #01070f 0%,
@@ -13,52 +30,55 @@ body {
     #031425 75%,
     #01070f 100%
   );
-  color: #e7f6ff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  color: var(--text-main);
+  font-family: "Irish Grover", system-ui;
+  font-weight: 200;
+}
+main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
-  font-size: 50px;
+  font-size: 52px;
   font-family: "Rubik Dirt", system-ui;
   font-weight: 400;
-  font-style: normal;
+  margin-top: 1.5em;
+  color: var(--text-main);
 }
 
 button {
-  width: 200px;
-  height: 40px;
-  background: #0b2338;
-  color: #e7f6ff;
-  border: 2px solid #6ba8ff;
-  border-radius: 6px;
-  font-family: "Orbitron", sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease, opacity 0.15s ease;
+  font-size: 22px;
+  font-family: "Irish Grover", system-ui;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1.5px solid var(--btn-border);
+  border-radius: 8px;
   margin-top: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
+    transform 0.12s ease, opacity 0.15s ease;
 }
 
 button:hover {
-  background: #2a8dd1;
-  border-color: #a8d8ff;
-  box-shadow: 0 0 18px rgba(107, 168, 255, 0.9);
-  opacity: 1;
+  background: var(--btn-hover-bg);
+  border-color: var(--btn-hover-border);
+  box-shadow: var(--btn-shadow-strong), var(--btn-shadow-glow);
+  transform: translateY(-1px);
 }
 
 button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35);
   opacity: 0.92;
 }
 
-/* Text: #E7F6FF
-
-Button bg: #0B2338
-
-Border: #6BA8FF
-
-Hover bg: #2A8DD1
-
-Hover border: #A8D8FF
-
-Input bg: #21415A */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}

@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/startPage.css" />
+    <link rel="stylesheet" href="/css/ChoseQuiz.css" />
     <link rel="icon" href="/images/iconpng.png" type="image/png" />
+
+    <script type="module" src="/Js/StartPage.js"></script>
+    <script type="module" src="/Js/ChoseQuiz.js"></script>
+    <script type="module" src="/Js/Dom.js"></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Wallpoet&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
     </style>
     <title>Movie Quiz</title>
   </head>
@@ -14,21 +24,33 @@
     <header>
       <h1>Movie Quiz</h1>
     </header>
-
     <main>
       <!-- Start page -->
-      <section id="Start-page">
-        <button>Start</button>
+      <section class="start-page">
+        <div class="start-container">
+          <label id="name-lable" for="">Name</label>
+          <input type="text" name="" id="player-input" />
+        </div>
+        <button id="start-btn">Start</button>
       </section>
 
       <!-- Chose quiz page -->
-      <section id="ChoseQuiz-page"></section>
+      <section class="choseQuiz-page">
+        <div class="chose-container">
+          <button id="back-btn">Back</button>
+        </div>
+        <div id="quiz">
+          <h2>Quiz</h2>
+          <button class="quiz-btn">Lord Of The Ring</button>
+          <button class="quiz-btn">Movie Release Years</button>
+        </div>
+      </section>
 
       <!-- Play quiz page -->
-      <section id="Quiz-page"></section>
+      <section id="quiz-page"></section>
 
       <!-- Result page -->
-      <section id="Result-page"></section>
+      <section id="result-page"></section>
     </main>
     <footer></footer>
   </body>

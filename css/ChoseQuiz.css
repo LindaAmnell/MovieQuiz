@@ -1,0 +1,31 @@
+.choseQuiz-page {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+#back-btn {
+  padding: 0.3em 1em;
+
+  font-weight: 200;
+}
+#quiz {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7em;
+}
+h2 {
+  font-size: 35px;
+  align-self: center;
+  font-weight: 100;
+}
+.quiz-btn {
+  padding: 0.4em 2.2em;
+}
