@@ -1,0 +1,38 @@
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  display: none;
+  place-items: center;
+}
+
+#score-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10em;
+  margin-top: 1em;
+}
+
+.info {
+  font-size: 22px;
+}
+
+.show {
+  display: flex;
+}
+
+.quiz-text {
+  font-size: 25px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 0.8em;
+}
+.btn-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#answer-btn {
+  padding: 0.1em 6.5em;
+}

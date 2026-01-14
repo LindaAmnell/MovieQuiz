@@ -16,6 +16,8 @@
   flex-direction: column;
 }
 #start-btn {
+  padding: 0.3em 1em;
+  font-weight: 200;
 }
 
 #name-lable {
@@ -27,16 +29,12 @@
 #player-input {
   padding: 0.6em 0.8em;
   width: 200px;
-
   background-color: transparent;
   color: var(--text-main);
-
   border: 1.5px solid var(--input-border);
   border-radius: 4px;
-
   font-size: 18px;
   font-family: "Irish Grover", system-ui;
-
   outline: none;
 }
 

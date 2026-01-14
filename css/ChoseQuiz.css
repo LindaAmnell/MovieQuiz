@@ -13,7 +13,6 @@
 }
 #back-btn {
   padding: 0.3em 1em;
-
   font-weight: 200;
 }
 #quiz {
@@ -26,6 +25,6 @@ h2 {
   align-self: center;
   font-weight: 100;
 }
-.quiz-btn {
+#quiz-btn {
   padding: 0.4em 2.2em;
 }

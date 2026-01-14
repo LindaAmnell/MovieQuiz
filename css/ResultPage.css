@@ -1,0 +1,48 @@
+.result-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+  place-items: center;
+  display: none;
+}
+
+.result-section {
+  border: 1px solid white;
+  height: 15em;
+  width: 18em;
+}
+
+.show {
+  display: flex;
+}
+
+.info-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em 1em;
+  border-bottom: 1px solid white;
+}
+
+.info-div p {
+  font-size: 20px;
+}
+
+.player-div {
+  display: flex;
+  padding: 0.3em 1em;
+  justify-content: space-between;
+  margin-top: 0.2em;
+}
+
+.player-div p {
+  font-size: 20px;
+}
+
+#goTo-quizPage-btn {
+  width: 9em;
+}
+#goTo-startPage-btn {
+  width: 9em;
+  margin: 0;
+}

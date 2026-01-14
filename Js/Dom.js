@@ -1,4 +1,26 @@
-export const StartScreen = document.querySelector(".start-page");
-export const ChosePage = document.querySelector(".choseQuiz-page");
-export const BackBtn = document.querySelector("#back-btn");
-export const StartBtn = document.querySelector("#start-btn");
+//sections
+const StartScreen = document.querySelector(".start-page");
+const ChosePage = document.querySelector(".choseQuiz-page");
+const PlayQuizPage = document.querySelector(".quiz-page");
+const ResultPage = document.querySelector(".result-page");
+
+//buttons
+const BackBtn = document.querySelector("#back-btn");
+const StartBtn = document.querySelector("#start-btn");
+const ChosenQuizBtn = document.querySelector("#quiz-btn");
+const AnswerBtn = document.querySelector("#answer-btn");
+const BackToStartBtn = document.querySelector("#goTo-startPage-btn");
+const BackToQuiz = document.querySelector("#goTo-quizPage-btn");
+
+export {
+  StartBtn,
+  StartScreen,
+  ChosePage,
+  BackBtn,
+  ChosenQuizBtn,
+  PlayQuizPage,
+  ResultPage,
+  AnswerBtn,
+  BackToStartBtn,
+  BackToQuiz,
+};

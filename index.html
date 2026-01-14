@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/startPage.css" />
     <link rel="stylesheet" href="/css/ChoseQuiz.css" />
+    <link rel="stylesheet" href="/css/QuizPage.css" />
+    <link rel="stylesheet" href="/css/ResultPage.css" />
+
     <link rel="icon" href="/images/iconpng.png" type="image/png" />
 
     <script type="module" src="/Js/StartPage.js"></script>
     <script type="module" src="/Js/ChoseQuiz.js"></script>
-    <script type="module" src="/Js/Dom.js"></script>
+    <script type="module" src="/Js/PlayQuiz.js"></script>
+    <script type="module" src="/Js/Result.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Wallpoet&display=swap");
@@ -41,17 +45,43 @@
         </div>
         <div id="quiz">
           <h2>Quiz</h2>
-          <button class="quiz-btn">Lord Of The Ring</button>
-          <button class="quiz-btn">Movie Release Years</button>
+          <button id="quiz-btn">Lord Of The Ring</button>
+          <button id="quiz-btn">Movie Release Years</button>
         </div>
       </section>
 
       <!-- Play quiz page -->
-      <section id="quiz-page"></section>
+      <section class="quiz-page">
+        <div id="score-div">
+          <p class="info">Linda</p>
+          <p class="info">2/10</p>
+        </div>
+        <p class="quiz-text">In which year was The Matrix released?</p>
+        <div class="btn-section">
+          <button id="answer-btn">1997</button>
+          <button class="answer-btn">1999</button>
+          <button class="answer-btn">2001</button>
+          <button class="answer-btn">2003</button>
+        </div>
+      </section>
 
       <!-- Result page -->
-      <section id="result-page"></section>
+      <section class="result-page">
+        <h2>Results</h2>
+        <div class="result-section">
+          <div class="info-div">
+            <p>Name</p>
+            <p>Score</p>
+          </div>
+          <div class="player-div">
+            <p>Linda</p>
+            <p>10/10</p>
+          </div>
+        </div>
+
+        <button id="goTo-quizPage-btn">Quiz Menu</button>
+        <button id="goTo-startPage-btn">Exit</button>
+      </section>
     </main>
-    <footer></footer>
   </body>
 </html>
