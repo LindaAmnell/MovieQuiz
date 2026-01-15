@@ -3,6 +3,8 @@ const StartScreen = document.querySelector(".start-page");
 const ChosePage = document.querySelector(".choseQuiz-page");
 const PlayQuizPage = document.querySelector(".quiz-page");
 const ResultPage = document.querySelector(".result-page");
+const BackBtnDiv = document.querySelector(".backBtn-div");
+const ScoreInfo = document.querySelector(".score-div");
 
 //buttons
 const BackBtn = document.querySelector("#back-btn");
@@ -23,4 +25,6 @@ export {
   AnswerBtn,
   BackToStartBtn,
   BackToQuiz,
+  BackBtnDiv,
+  ScoreInfo,
 };

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/startPage.css" />
     <link rel="stylesheet" href="/css/ChoseQuiz.css" />
@@ -26,23 +27,28 @@
   </head>
   <body>
     <header>
-      <h1>Movie Quiz</h1>
+      <h1>Who’s That?!</h1>
     </header>
     <main>
       <!-- Start page -->
       <section class="start-page">
         <div class="start-container">
-          <label id="name-lable" for="">Name</label>
-          <input type="text" name="" id="player-input" />
+          <div class="subtitle">
+            <p>You’ve seen them.</p>
+            <p>Do you know them?</p>
+          </div>
+          <p class="description">
+            Guess the character from images, quotes and clues.
+          </p>
+          <label id="name-lable" for="">Enter your name and let’s begin.</label>
+          <input type="text" id="player-input" placeholder="Your name" />
         </div>
         <button id="start-btn">Start</button>
       </section>
 
       <!-- Chose quiz page -->
       <section class="choseQuiz-page">
-        <div class="chose-container">
-          <button id="back-btn">Back</button>
-        </div>
+        <p class="quiz-info">Choose a quiz to begin.</p>
         <div id="quiz">
           <h2>Quiz</h2>
           <button id="quiz-btn">Lord Of The Ring</button>
@@ -52,10 +58,7 @@
 
       <!-- Play quiz page -->
       <section class="quiz-page">
-        <div id="score-div">
-          <p class="info">Linda</p>
-          <p class="info">2/10</p>
-        </div>
+        <p id="quiz-name">Movie Release Years</p>
         <p class="quiz-text">In which year was The Matrix released?</p>
         <div class="btn-section">
           <button id="answer-btn">1997</button>
@@ -78,10 +81,18 @@
             <p>10/10</p>
           </div>
         </div>
-
         <button id="goTo-quizPage-btn">Quiz Menu</button>
         <button id="goTo-startPage-btn">Exit</button>
       </section>
+      <footer class="footer-info">
+        <div class="backBtn-div">
+          <button id="back-btn">Back</button>
+        </div>
+        <div class="score-div">
+          <p class="info">Linda</p>
+          <p class="info">2/10</p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

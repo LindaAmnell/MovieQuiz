@@ -1,16 +1,17 @@
 .result-page {
-  display: flex;
   flex-direction: column;
   gap: 1em;
   margin-top: 1em;
   place-items: center;
   display: none;
+  min-height: calc(90vh - 120px);
 }
 
 .result-section {
   border: 1px solid white;
   height: 15em;
   width: 18em;
+  margin-bottom: 2em;
 }
 
 .show {

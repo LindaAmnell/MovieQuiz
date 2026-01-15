@@ -13,7 +13,7 @@
   --input-focus-border: rgba(231, 246, 255, 0.9);
 }
 * {
-  box-sizing: 0;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -38,17 +38,19 @@ body {
   font-weight: 200;
 }
 main {
-  height: 80vh;
+  min-height: calc(90vh - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 h1 {
-  font-size: 52px;
+  font-size: 42px;
   font-family: "Rubik Dirt", system-ui;
   font-weight: 400;
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   color: var(--text-main);
+  letter-spacing: 0.04em;
 }
 
 button {
@@ -58,8 +60,8 @@ button {
   color: var(--btn-text);
   border: 1.5px solid var(--btn-border);
   border-radius: 8px;
-  margin-top: 1em;
   cursor: pointer;
+  box-shadow: var(--btn-shadow-strong);
   transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease,
     transform 0.12s ease, opacity 0.15s ease;
 }
@@ -81,4 +83,23 @@ button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+.backBtn-div {
+  display: none;
+}
+#back-btn {
+  padding: 0 1em;
+  font-weight: 200;
+}
+.show {
+  display: flex;
+}
+
+.score-div {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 17em;
+  margin-top: 1em;
 }
