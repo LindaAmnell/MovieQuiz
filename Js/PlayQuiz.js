@@ -5,6 +5,6 @@ AnswerBtn.addEventListener("click", () => {
   ResultPage.classList.add("show");
   console.log("click");
 
-  // add so it disepairs when the last question is done
+  //  Fix: hides too early, should hide after last question
   ScoreInfo.classList.remove("show");
 });

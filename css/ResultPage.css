@@ -6,12 +6,17 @@
   display: none;
   min-height: calc(90vh - 120px);
 }
-
+.result-page h2 {
+  margin-bottom: 0.5em;
+}
 .result-section {
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   height: 15em;
-  width: 18em;
+  width: 15em;
   margin-bottom: 2em;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.6), 0 0 10px rgba(107, 168, 255, 0.15);
 }
 
 .show {
@@ -21,19 +26,23 @@
 .info-div {
   display: flex;
   justify-content: space-between;
-  padding: 0.3em 1em;
+  padding: 0.6em 1.1em;
   border-bottom: 1px solid white;
 }
 
 .info-div p {
   font-size: 20px;
+  opacity: 0.75;
 }
 
 .player-div {
   display: flex;
-  padding: 0.3em 1em;
+  padding: 0.6em 1.1em;
   justify-content: space-between;
   margin-top: 0.2em;
+}
+.player-div:first-child {
+  font-weight: 600;
 }
 
 .player-div p {
