@@ -5,12 +5,12 @@ const PlayQuizPage = document.querySelector(".quiz-page");
 const ResultPage = document.querySelector(".result-page");
 const BackBtnDiv = document.querySelector(".backBtn-div");
 const ScoreInfo = document.querySelector(".score-div");
+const quizDiv = document.querySelector("#quiz");
 
 //buttons
 const BackBtn = document.querySelector("#back-btn");
 const StartBtn = document.querySelector("#start-btn");
-const ChosenQuizBtn = document.querySelector("#quiz-btn");
-const AnswerBtn = document.querySelector("#answer-btn");
+// const AnswerBtn = document.querySelector(".answer-btn");
 const BackToStartBtn = document.querySelector("#goTo-startPage-btn");
 const BackToQuiz = document.querySelector("#goTo-quizPage-btn");
 
@@ -19,12 +19,11 @@ export {
   StartScreen,
   ChosePage,
   BackBtn,
-  ChosenQuizBtn,
   PlayQuizPage,
   ResultPage,
-  AnswerBtn,
   BackToStartBtn,
   BackToQuiz,
   BackBtnDiv,
   ScoreInfo,
+  quizDiv,
 };

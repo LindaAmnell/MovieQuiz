@@ -27,7 +27,7 @@ h2 {
   align-self: center;
   font-weight: 100;
 }
-#quiz-btn {
+.quiz-btn {
   padding: 0.1em;
   width: 300px;
 }
